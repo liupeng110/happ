@@ -14,7 +14,7 @@ class Activity_Base : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        x.view().inject(this)
+
 
     }
 }
