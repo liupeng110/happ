@@ -47,22 +47,13 @@ class Activity_Main_tab : Activity_Base() {//主页面
         line.layoutParams.width = line_width
         line.requestLayout()
 
-//        viewPager = findViewById(R.id.viewPager) as ViewPager
         viewPager.adapter = object : FragmentStatePagerAdapter(supportFragmentManager) {
-            override fun getCount(): Int {
-                return fragments!!.size
-            }
-
-            override fun getItem(index: Int): Fragment {
-                return fragments!![index]
-            }
+            override fun getCount(): Int { return fragments!!.size }
+            override fun getItem(index: Int): Fragment { return fragments!![index] }
         }
 
         viewPager.addOnPageChangeListener(object : OnPageChangeListener {
-            override fun onPageSelected(index: Int) {
-                changeState(index)
-            }
-
+            override fun onPageSelected(index: Int) { changeState(index) }
             override fun onPageScrolled(index: Int, arg1: Float, offset: Int) {
                 val tagerX = (index * line_width + offset / fragments!!.size).toFloat()
                 ViewPropertyAnimator.animate(line).translationX(tagerX).duration = 0
@@ -74,7 +65,7 @@ class Activity_Main_tab : Activity_Base() {//主页面
         val size = textViews!!.size
         for (curr in 0..size - 1) {
             val temp = curr
-            textViews!![temp].setOnClickListener { viewPager.setCurrentItem(temp) }
+            textViews!![temp].setOnClickListener { viewPager.currentItem = temp }
         }
 
     }
