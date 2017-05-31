@@ -17,7 +17,7 @@ class Activity_Main : AppCompatActivity() {
 
 
         fun onClick(){
-             var a =0;
+             var a =0
             EventBus.getDefault().postSticky("标签2"+a)
 
         }
@@ -25,4 +25,8 @@ class Activity_Main : AppCompatActivity() {
 
 
     }
+
+
+
+
 }
