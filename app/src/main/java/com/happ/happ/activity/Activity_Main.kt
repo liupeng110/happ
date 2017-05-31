@@ -26,7 +26,6 @@ class Activity_Main : AppCompatActivity() {
         main_tv.text="kotlin"
         main_tv.setOnClickListener{
             onClick()
-//            toast("点击kotlin")
         }
 
 
@@ -34,23 +33,8 @@ class Activity_Main : AppCompatActivity() {
 
 
     fun onClick(){
-
-        var dead= DeadLock()
-        dead.setFlag("a")
-        dead.run()
-
-//      var ali=  AliveOtherThread()
-//        ali.start()
-
-//        ArrayObject.main()
-//        var nums:IntArray = intArrayOf(1, 2, 3)
-//        main_tv.text=""+Apo.binarySearchFind(nums,3)
-
-
-
-//       startActivity(Intent(MainActivity@this,  Activity_Main_tab::class.java))
-//        var a =0
-//        EventBus.getDefault().postSticky("标签2"+a)
+        toast("点击kotlin")
+        startActivity(Intent(MainActivity@this,  Activity_Main_tab::class.java))
     }
 
 
