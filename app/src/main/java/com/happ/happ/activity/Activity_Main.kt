@@ -1,5 +1,6 @@
 package com.happ.happ.activity
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,13 +16,18 @@ class Activity_Main : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         main_tv.text="kotlin"
-        main_tv.setOnClickListener{ toast("点击kotlin")}
+        main_tv.setOnClickListener{
+            onClick()
+//            toast("点击kotlin")
+        }
 
 
     }
 
 
     fun onClick(){
+        startActivity(Intent(MainActivity@this,  Activity_Main_tab::class.java))
+
         var a =0
         EventBus.getDefault().postSticky("标签2"+a)
 
