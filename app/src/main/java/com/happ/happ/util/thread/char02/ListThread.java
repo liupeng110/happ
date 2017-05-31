@@ -2,7 +2,7 @@ package com.happ.happ.util.thread.char02;
 
 /**
  * Created by byhieg on 17/1/3.
- * Mail to byhieg@gmail.com
+ * Mail to byhieg@gmail.com 
  */
 public class ListThread extends Thread{
 
