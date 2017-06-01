@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.activity_maintab.*
 
 
 /** 717219917@qq.com  2016/12/14 0:26  */
-class Activity_Main_tab : Activity_Base() {//主页面 
+class Activity_Main_tab : Activity_Base() {//主页面
 
     private var fragments: ArrayList<Fragment>? = null
     private var textViews: ArrayList<TextView>? = null
