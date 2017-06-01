@@ -16,7 +16,7 @@ import com.happ.happ.fragment.Fragment_My
 import com.nineoldandroids.view.ViewPropertyAnimator
 
 import java.util.ArrayList
-import kotlinx.android.synthetic.main.activity_main_tab.*
+import kotlinx.android.synthetic.main.activity_maintab.*
 
 
 /** 717219917@qq.com  2016/12/14 0:26  */
@@ -29,7 +29,7 @@ class Activity_Main_tab : Activity_Base() {//主页面
     override fun onCreate(savedInstanceState: Bundle?) {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_tab)
+        setContentView(R.layout.activity_maintab)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         ViewPropertyAnimator.animate(tab_app).scaleX(1.0f).duration = 0
 
